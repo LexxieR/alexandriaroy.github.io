@@ -1,7 +1,7 @@
 // Language translation data
 const translations = {
     en: {
-        title: "Welcome to My Website",
+        title: "Welcome to My Website!!!!!!!!!!!",
         homeTitle: "Home",
         homeContent: "This is a simple website to demonstrate basic web development skills using HTML, CSS, and JavaScript.",
         aboutTitle: "About",
