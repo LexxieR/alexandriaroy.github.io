@@ -1,56 +1,80 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mon Simple Site Web</title>
+    <title>My Simple Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur Mon Site Web</h1>
-        <nav>
+        
+        <nav class="languages">
             <ul>
-                <li><a href="index.html">English</a></li> <!-- Link to the English version -->
-                <li><a href="index_fr.html">Français</a></li>
+                <li><a href="#" onclick="setLanguage('en')">English</a></li>
+                <li><a href="#" onclick="setLanguage('fr')">Français</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">Welcome to My Website</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="#web-dev">Web Development</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h2>Accueil</h2>
-            <p>Ceci est un site Web simple pour démontrer des compétences de base en développement Web.</p>
+            <h2 id="homeTitle">Home</h2>
+            <p id="homeContent"></p>
         </section>
 
         <section id="about">
-            <h2>À propos</h2>
-            <p>Ce site Web a été créé à partir de zéro en utilisant des technologies Web de base.</p>
+            <h2 id="aboutTitle">About</h2>
+            <p id="aboutContent"></p>
         </section>
 
         <section id="contact">
-            <h2>Contactez-nous</h2>
+            <h2 id="contactTitle">Contact Us</h2>
             <form id="contactForm">
-                <label for="name">Nom:</label>
+                <label id="nameLabel" for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br><br>
 
-                <label for="email">E-mail:</label>
+                <label id="emailLabel" for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br><br>
 
-                <label for="message">Message:</label>
+                <label id="messageLabel" for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <br><br>
 
-                <button type="submit">Envoyer</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
+        <span>&nbsp;</span>
     </main>
 
     <footer>
-        <p>&copy; 2024 Mon Simple Site Web</p>
+        <p>&copy; 2024 My Simple Website</p>
     </footer>
 
     <script src="script.js"></script>

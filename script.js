@@ -36,6 +36,15 @@ function setLanguage(lang) {
     document.getElementById('emailLabel').textContent = translations[lang].emailLabel;
     document.getElementById('messageLabel').textContent = translations[lang].messageLabel;
 }
+document.querySelectorAll('.menu li').forEach((menuItem) => {
+    menuItem.addEventListener('click', () => {
+        const dropdown = menuItem.querySelector('.dropdown');
+        if (dropdown) {
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
+
 
 // Default language
 setLanguage('en');
