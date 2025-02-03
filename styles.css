@@ -85,3 +85,50 @@ button:hover {
     }
 }
 
+/* Dropdown Styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to the parent <li> */
+    top: 100%; /* Aligns dropdown below the parent <li> */
+    left: 0; /* Aligns dropdown to the left edge of the parent <li> */
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10; /* Ensures dropdown is above other elements */
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: #333333;
+    padding: 10px 20px;
+    text-align: middle; /* Aligns the entire menu to the left */
+}
+
+.menu li {
+    position: relative; /* Make the parent <li> the positioning context */
+}
+
+.menu li:hover > .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.languages {
+    background-color: #333333;
+    /*padding: 10px 20px;*/
+    text-align: right; /* Aligns the entire menu to the left */
+}
+
+.languages li {
+    position: relative; /* Make the parent <li> the positioning context */
+}
