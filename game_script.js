@@ -1,7 +1,8 @@
+// Language translation data
 const translations = {
     en: {
         title: "Welcome to My Website!",
-        homeTitle: "Home!",
+        homeTitle: "Home",
         homeContent: "This is a simple website to demonstrate basic web development skills using HTML, CSS, and JavaScript.",
         aboutTitle: "About",
         aboutContent: "This website was created from scratch using core web technologies.",
@@ -25,17 +26,16 @@ const translations = {
 
 // Function to set the language
 function setLanguage(lang) {
-    // Get all elements with the data-translate attribute
-    const elements = document.querySelectorAll('[data-translate]');
-
-    elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        // Set the element's text content based on the translation key and selected language
-        element.textContent = translations[lang][key] || translations[lang].title;
-    });
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('homeTitle').textContent = translations[lang].homeTitle;
+    document.getElementById('homeContent').textContent = translations[lang].homeContent;
+    document.getElementById('aboutTitle').textContent = translations[lang].aboutTitle;
+    document.getElementById('aboutContent').textContent = translations[lang].aboutContent;
+    document.getElementById('contactTitle').textContent = translations[lang].contactTitle;
+    document.getElementById('nameLabel').textContent = translations[lang].nameLabel;
+    document.getElementById('emailLabel').textContent = translations[lang].emailLabel;
+    document.getElementById('messageLabel').textContent = translations[lang].messageLabel;
 }
-
-// Example menu interaction code (unchanged)
 document.querySelectorAll('.menu li').forEach((menuItem) => {
     menuItem.addEventListener('click', () => {
         const dropdown = menuItem.querySelector('.dropdown');
@@ -44,6 +44,7 @@ document.querySelectorAll('.menu li').forEach((menuItem) => {
         }
     });
 });
+
 
 // Default language
 setLanguage('en');
