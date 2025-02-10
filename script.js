@@ -1,7 +1,7 @@
 const translations = {
     en: {
         title: "Welcome to My Website!",
-        homeTitle: "Home!",
+        homeTitle: "Home",
         homeContent: "This is a simple website to demonstrate basic web development skills using HTML, CSS, and JavaScript.",
         aboutTitle: "About",
         aboutContent: "This website was created from scratch using core web technologies.",
@@ -25,25 +25,29 @@ const translations = {
 
 // Function to set the language
 function setLanguage(lang) {
-    // Get all elements with the data-translate attribute
+    localStorage.setItem("selectedLanguage", lang); 
     const elements = document.querySelectorAll('[data-translate]');
 
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        // Set the element's text content based on the translation key and selected language
-        element.textContent = translations[lang][key] || translations[lang].title;
+        element.textContent = translations[lang][key] || translations["en"][key];
+    });
+
+    // Highlight the selected language
+    document.querySelectorAll('.languages a').forEach(link => {
+        link.classList.remove("active"); // Remove highlight from all
+        if (link.textContent.toLowerCase().includes(lang)) {
+            link.classList.add("active"); // Highlight selected
+        }
     });
 }
 
-// Example menu interaction code (unchanged)
-document.querySelectorAll('.menu li').forEach((menuItem) => {
-    menuItem.addEventListener('click', () => {
-        const dropdown = menuItem.querySelector('.dropdown');
-        if (dropdown) {
-            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-        }
-    });
-});
 
-// Default language
-setLanguage('en');
+// Function to load the saved language on page load
+function loadLanguage() {
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English if not set
+    setLanguage(savedLanguage);
+}
+
+// Run on page load to apply the saved language
+document.addEventListener("DOMContentLoaded", loadLanguage);

@@ -132,3 +132,9 @@ button:hover {
 .languages li {
     position: relative; /* Make the parent <li> the positioning context */
 }
+
+.languages a.active {
+    /*font-weight: bold;*/
+    background-color: #494949;
+    /*text-decoration: underline;*/
+}
