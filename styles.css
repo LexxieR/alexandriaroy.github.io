@@ -44,10 +44,15 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0px 10px 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin: 0; /* Removes extra space around the text */
+    padding: 0px 0; /* Ensures equal spacing inside */
 }
 
 form {
@@ -105,23 +110,57 @@ button:hover {
 .dropdown a {
     display: block;
     padding: 8px 15px;
-    color: white;
+    color: srgb(210, 53, 53);
     text-decoration: none;
 }
 
 .menu {
     background-color: #333333;
     padding: 10px 20px;
-    text-align: middle; /* Aligns the entire menu to the left */
+    text-align: left; /* Aligns the entire menu to the left */
 }
 
 .menu li {
     position: relative; /* Make the parent <li> the positioning context */
+    margin-right: 20px;
+
 }
 
 .menu li:hover > .dropdown {
     display: block; /* Show dropdown on hover */
 }
+
+.menu ul {
+    align-items: left;
+    padding: 0;
+    list-style: none;
+}
+
+.menu .lan-menu {
+    color: #0008ff;
+    text-align: right;
+    
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Pushes items apart */
+    align-items: center; /* Keeps everything vertically aligned */
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Controls spacing */
+    margin: 0;
+    padding: 0;
+}
+
+.lan-menu {
+    display: flex;
+    gap: 10px; /* Controls spacing between language links */
+}
+
 
 .languages {
     background-color: #333333;
