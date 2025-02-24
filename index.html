@@ -8,6 +8,8 @@
     <title>My Simple Website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="header.js" defer></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body>
 
@@ -19,21 +21,38 @@
             <div class="overlay"></div>
             <div class="hero-text">
                 <h1 data-translate="title">Hello, I'm Alexandria Roy!!</h1>
-                <p>Your go-to place for web development</p>
+                <p data-translate="welcomeContent"></p>
                 <a href="#about" class="btn">Learn More</a>
             </div>
         </div>
     </section>
     
     <main>
-        <section id="home">
-            <h2 data-translate="homeTitle"></h2>
-            <p data-translate="homeContent"></p>
-        </section>
 
         <section id="about">
             <h2 data-translate="aboutTitle"></h2>
             <p data-translate="aboutContent"></p>
+            <a href="projects.html" class="btn" >Learn More About my Projects</a>
+        </section>
+
+        <section id="skills">
+            <h2 data-translate="skillsTitle"></h2>
+            <p data-translate="skillsContent"></p>
+            <div class="skills-container">
+                <p><i class="devicon-html5-plain colored devicon"></i> HTML</p> 
+                <p><i class="devicon-css3-plain colored devicon"></i> CSS</p>
+                <p><i class="devicon-javascript-plain colored devicon"></i> JavaScript</p>
+                <p><i class="devicon-wordpress-plain devicon"></i> Wordpress</p>
+                <p><i class="devicon-cplusplus-plain colored devicon"></i> C++</p>
+                <p><i class="devicon-python-plain colored devicon"></i> Python</p>
+                <p><i class="devicon-java-plain colored devicon"></i> Java</p>
+                <p><i class="devicon-r-plain colored devicon"></i> R</p>
+            </div>
+            
+
+            <div style="text-align:center; margin: 20px;"><a href="Roy_Alexandria_Resume.pdf" class="btn">Check out my resume!!!!!!!!!!!!!!!!!</a> 
+            </div>
+            
         </section>
 
         <section id="contact">
@@ -51,7 +70,7 @@
                 <textarea id="message" name="message" required></textarea>
                 <br><br>
 
-                <button type="submit">Submit</button>
+                <button class="btn" type="submit">Submit</button>
             </form>
         </section>
         <span>&nbsp;</span>

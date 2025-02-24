@@ -52,7 +52,7 @@ footer {
     color: white;
     text-align: center;
     padding: 5px 0px 10px 0px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
 }
@@ -182,7 +182,7 @@ button:hover {
 .hero {
     position: relative; /* Needed to position the overlay */
     width: 100%;
-    height: 400px; /* Adjust as needed */
+    height: 700px; /* Adjust as needed */
     overflow: hidden;
 }
 
@@ -222,8 +222,40 @@ button:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
+    text-align: center;
+    
 }
 
 .btn:hover {
     background: #cc5500;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 equal columns */
+    gap: 10px; /* Space between items */
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the grid itself */
+    text-align: center; /* Centers text */
+}
+
+.skills-container p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    font-size: 18px;
+    
+}
+
+.devicon {
+    font-size: 62px; /* Adjust size */
+    margin-right: 10px; /* Add spacing between icon and text */
+    vertical-align: middle; /* Align icons with text */
+    
+   
+    
+}
+.devicon-wordpress-plain {
+    color: #21759b; /* Official WordPress blue */
+    
 }
