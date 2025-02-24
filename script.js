@@ -55,5 +55,11 @@ function loadLanguage() {
     setLanguage(savedLanguage);
 }
 
+function showLoadingScreen() {
+    // Show the loading screen
+    document.getElementById('loading-screen').style.display = 'flex';
+}
+
+
 // Run on page load to apply the saved language
 document.addEventListener("DOMContentLoaded", loadLanguage);
