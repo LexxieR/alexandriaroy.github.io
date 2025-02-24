@@ -8,7 +8,7 @@ const translations = {
         aboutContent: "Although my academic background is in physics, I’ve developed a strong passion in web development while working at McMaster Universty on the Science Departmental website. Through professional and personal projects, I’ve gained hands-on experience in front-end development.",
         skillsTitle: "Skills",
         skillsContent: "",
-        contactTitle: "Contact Us",
+        contactTitle: "Contact",
         nameLabel: "Name:",
         emailLabel: "Email:",
         messageLabel: "Message:"
@@ -22,7 +22,7 @@ const translations = {
         aboutContent: "Ce site Web a été créé à partir de zéro en utilisant des technologies Web de base.",
         skillsTitle: "Compétences",
         homeContent: "Ceci est un site Web simple pour démontrer des compétences de base en développement Web.",
-        contactTitle: "Contactez-nous",
+        contactTitle: "Contact",
         nameLabel: "Nom:",
         emailLabel: "E-mail:",
         messageLabel: "Message:"
