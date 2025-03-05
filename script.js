@@ -1,11 +1,11 @@
 const translations = {
     en: {
-        title: "Hello, I'm Alexandria",
+        title: "Hi, I'm Alexandria",
         homeTitle: "Home",
         homeContent: "This is a simple website to demonstrate basic web development skills using HTML, CSS, and JavaScript.",
-        welcomeContent: "Hi, I’m Lexxie, a passionate aspiring developer with a strong foundation in problem-solving.",
+        welcomeContent: "I’m a problem-solver with a background in physics and a passion for programming and web development. I love building intuitive, efficient digital experiences and have hands-on experience with front-end technologies.",
         aboutTitle: "About",
-        aboutContent: "Although my academic background is in physics, I’ve developed a strong passion in web development while working at McMaster Universty on the Science Departmental website. Through professional and personal projects, I’ve gained hands-on experience in front-end development.",
+        aboutContent: "Although my academic background is in physics, I’ve developed a strong passion in web development while working at McMaster Universty on the Science Departmental website. Through professional and personal projects, I’ve gained hands-on experience in front-end development. My analytical mindset allows me to approach coding challenges with a structured and creative problem-solving approach.",
         skillsTitle: "Skills",
         skillsContent: "",
         contactTitle: "Contact",
@@ -17,7 +17,7 @@ const translations = {
         title: "Bienvenue sur Mon Site Web",
         homeTitle: "Accueil",
         homeContent: "Ceci est un site Web simple pour démontrer des compétences de base en développement Web.",
-        welcomeContent: "Hi, I’m Lexxie, a passionate developer with a strong foundation in problem-solving, automation, and software development.",
+        welcomeContent: "Hi, I’m Lexxie, a passionate aspiring developer with a strong foundation in problem-solving.",
         aboutTitle: "À propos",
         aboutContent: "Ce site Web a été créé à partir de zéro en utilisant des technologies Web de base.",
         skillsTitle: "Compétences",

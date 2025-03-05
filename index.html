@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="header.js" defer></script> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
@@ -32,6 +32,7 @@
         <section id="about">
             <h2 data-translate="aboutTitle"></h2>
             <p data-translate="aboutContent"></p>
+            
             <a href="projects.html" class="btn" >Learn More About my Projects</a>
         </section>
 
@@ -45,14 +46,41 @@
                 <p><i class="devicon-wordpress-plain devicon"></i> Wordpress</p>
                 <p><i class="devicon-cplusplus-plain colored devicon"></i> C++</p>
                 <p><i class="devicon-python-plain colored devicon"></i> Python</p>
-                <p><i class="devicon-java-plain colored devicon"></i> Java</p>
                 <p><i class="devicon-r-plain colored devicon"></i> R</p>
+                <p><i class="devicon-java-plain colored devicon"></i> Java</p>
+                <p><i class="devicon-haskell-plain colored devicon"></i> Haskell</p>
             </div>
-            
 
-            <div style="text-align:center; margin: 20px;"><a href="Roy_Alexandria_Resume.pdf" class="btn">Check out my resume!!!!!!!!!!!!!!!!!</a> 
+
+            <div><a href="Roy_Alexandria_Resume.pdf" class="btn">Check out my resume</a> 
+            </div>    
+        </section>
+
+        <section id="projects">
+            <div class="thumbnail-wrapper">
+            <a class="thumbnail" href="https://web.archive.org/web/20230926053004/https://chemistry.mcmaster.ca/">
+                <i class="fas fa-university fa-3x"></i>
+                <div class="thumbnail-header">McMaster University Chemisty Departement Website</div>
+                <div class="thumbnail-container">
+                    <p>During the summer of 2023, I had a key role in the new design of the departemental 
+                        websites, maintaining brand consitency along each website and adding new feature 
+                        for usability improvement.</p>
+                </div>
+            </a>
+           
+            <a class="thumbnail" href="https://github.com/LexxieR/double-pendulum-model">
+                <img src="BaseCase2.jpg" alt="Graph of the motion of the double pendulum model"></img>
+                <div class="thumbnail-header">Double Pendulum Model in C++</div>
+                <div class="thumbnail-container">
+                    <p>As a final project for the scientific computing course at mcmaster university I developped
+                         a model of a double pendulum system in C++ using the Runge-Kutta methode to solve 
+                         the ordinary differential equations involved.</p>
+                </div>
+            </a>
             </div>
-            
+
+    
+        
         </section>
 
         <section id="contact">
@@ -68,9 +96,9 @@
 
                 <label data-translate="messageLabel">Message:</label>
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <br><br>
+          
 
-                <button class="btn" type="submit">Submit load</button>
+                <div><a class="btn" type="submit">Submit load</a></div>
             </form>
             <!-- Loading Screen (Hidden by default) -->
 
