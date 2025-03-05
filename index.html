@@ -22,7 +22,7 @@
             <div class="hero-text">
                 <h1 data-translate="title">Hello, I'm Alexandria Roy!!</h1>
                 <p data-translate="welcomeContent"></p>
-                <a href="#about" class="btn">Learn More</a>
+                <a href="#about" class="btn" data-translate="welcomeBtn"></a>
             </div>
         </div>
     </section>
@@ -33,53 +33,50 @@
             <h2 data-translate="aboutTitle"></h2>
             <p data-translate="aboutContent"></p>
             
-            <a href="projects.html" class="btn" >Learn More About my Projects</a>
+            <a href="projects.html" class="btn" data-translate="aboutBtn">Learn More About my Projects</a>
         </section>
 
         <section id="skills">
             <h2 data-translate="skillsTitle"></h2>
             <p data-translate="skillsContent"></p>
             <div class="skills-container">
-                <p><i class="devicon-html5-plain colored devicon"></i> HTML</p> 
-                <p><i class="devicon-css3-plain colored devicon"></i> CSS</p>
-                <p><i class="devicon-javascript-plain colored devicon"></i> JavaScript</p>
+                <p><i class="devicon-html5-plain  devicon"></i>&nbsp; HTML</p> 
+                <p><i class="devicon-css3-plain  devicon"></i> CSS</p>
+                <p><i class="devicon-javascript-plain  devicon"></i> JavaScript</p>
                 <p><i class="devicon-wordpress-plain devicon"></i> Wordpress</p>
-                <p><i class="devicon-cplusplus-plain colored devicon"></i> C++</p>
-                <p><i class="devicon-python-plain colored devicon"></i> Python</p>
-                <p><i class="devicon-r-plain colored devicon"></i> R</p>
-                <p><i class="devicon-java-plain colored devicon"></i> Java</p>
-                <p><i class="devicon-haskell-plain colored devicon"></i> Haskell</p>
+                <p><i class="devicon-cplusplus-plain  devicon"></i> C++</p>
+                <p><i class="devicon-python-plain  devicon"></i> Python</p>
+                <p><i class="devicon-r-plain  devicon"></i> R</p>
+                <p><i class="devicon-java-plain  devicon"></i> Java</p>
+                <p><i class="devicon-haskell-plain  devicon"></i> Haskell</p>
             </div>
 
 
-            <div><a href="Roy_Alexandria_Resume.pdf" class="btn">Check out my resume</a> 
+            <div><a href="Roy_Alexandria_Resume.pdf" class="btn" data-translate = "resumeBtn">Check out my resume</a> 
             </div>    
         </section>
 
         <section id="projects">
+            <h2 data-translate="projectsTitle"></h2>
             <div class="thumbnail-wrapper">
             <a class="thumbnail" href="https://web.archive.org/web/20230926053004/https://chemistry.mcmaster.ca/">
                 <i class="fas fa-university fa-3x"></i>
-                <div class="thumbnail-header">McMaster University Chemisty Departement Website</div>
+                <h3 class="thumbnail-header" data-translate="projectsChemTitle"></h3>
                 <div class="thumbnail-container">
-                    <p>During the summer of 2023, I had a key role in the new design of the departemental 
-                        websites, maintaining brand consitency along each website and adding new feature 
-                        for usability improvement.</p>
+                    <p data-translate="projectsChemContent"></p>
+
                 </div>
             </a>
            
             <a class="thumbnail" href="https://github.com/LexxieR/double-pendulum-model">
                 <img src="BaseCase2.jpg" alt="Graph of the motion of the double pendulum model"></img>
-                <div class="thumbnail-header">Double Pendulum Model in C++</div>
+                <div class="thumbnail-header" data-translate="projectsPenTitle">Double Pendulum Model in C++</div>
                 <div class="thumbnail-container">
-                    <p>As a final project for the scientific computing course at mcmaster university I developped
-                         a model of a double pendulum system in C++ using the Runge-Kutta methode to solve 
-                         the ordinary differential equations involved.</p>
+                    <p data-translate="projectsPenContent"></p>
+                    
                 </div>
             </a>
             </div>
-
-    
         
         </section>
 
@@ -98,7 +95,7 @@
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
           
 
-                <div><a class="btn" type="submit">Submit load</a></div>
+                <div><a class="btn" type="submit" data-translate="submitBtn">Submit</a></div>
             </form>
             <!-- Loading Screen (Hidden by default) -->
 
@@ -111,7 +108,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025, Alexandria Roy</p>
+        <p>2025 &copy; Alexandria Roy, All Rights Reserved</p>
     </footer>
 
     <script  style = "text-align: right;" src="script.js"></script>

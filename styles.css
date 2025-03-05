@@ -17,6 +17,12 @@ h1{
     margin-bottom: 1rem;
 }
 
+h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+
 .thumbnail-wrapper {
     display: flex;
     flex-wrap: wrap;  /* Allows wrapping on small screens */
@@ -25,7 +31,7 @@ h1{
 }
 
 .thumbnail {
-    width: 400px;
+    width: 300px;
     text-align: center;
     text-decoration: none;
     background: maroon;
@@ -34,6 +40,10 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
                 0 6px 20px rgba(0, 0, 0, 0.19);
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    box-sizing: border-box;  /* Ensures padding and borders are included in width */
+    height: 100%; /* Ensures the thumbnail container stretches to its contents */
      /* box-sizing: border-box; Ensures padding and borders are included in width */
 }
 
@@ -52,7 +62,7 @@ h1{
 
 .thumbnail i {
     color: #FDBF57;
-    font-size: 350px;  /* Adjust this value to make it bigger */
+    font-size: 230px;  /* Adjust this value to make it bigger */
     margin: 35px 0px 35px 0px;
 }
 
@@ -73,8 +83,14 @@ h1{
 
 /* Text container */
 .thumbnail-container {
-  
     background-color: #525252;
+    padding: 0px;
+    color: #ffffff;
+    flex-grow: 1;  /* Allows the container to take up the remaining space */
+    box-sizing: border-box;  /* Ensures padding is included within the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Ensures space is evenly distributed */
     
 }
 .thumbnail-container p {
@@ -239,7 +255,7 @@ button:hover {
 /* Language Menu */
 .lan-menu {
     display: flex;
-    gap: 10px;
+    
 }
 
 .lan-menu a {
@@ -329,10 +345,6 @@ button:hover {
     font-size: 80px; /* Adjust size */
     margin-right: 0px; /* Add spacing between icon and text */
     vertical-align: middle; /* Align icons with text */
-    
-}
-.devicon-wordpress-plain {
-    color: #21759b; /* Official WordPress blue */
     
 }
 
