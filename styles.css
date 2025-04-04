@@ -10,6 +10,16 @@ body {
     line-height: 1.6;
     background-color: #333;
     color: #ffffff;
+    margin: 0px;
+}
+
+.body-text {
+    background-color:#333333;
+    width: 70%;
+    padding: 1rem;
+    border: 5px solid #333333;
+    margin: auto;
+    text-align: center;
 }
 
 h1{
@@ -27,14 +37,14 @@ h2{
     display: flex;
     flex-wrap: wrap;  /* Allows wrapping on small screens */
     gap: 20px;        /* Adds space between thumbnails */
-    justify-content: left;
+    justify-content: center;
 }
 
 .thumbnail {
     width: 300px;
     text-align: center;
     text-decoration: none;
-    background: maroon;
+    background: #333333;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
@@ -49,7 +59,7 @@ h2{
 
 /* Hover effect */
 .thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .thumbnail img {
@@ -75,10 +85,27 @@ h2{
 .thumbnail-header {
     background-color: #3b3b3b;
     color: white;
-    padding: 10px;
+    height: 80px;
+ 
+    
+    text-align: center;
+    padding:10px;
+
     font-size: 18px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    
+
 }
+
+
 
 
 /* Text container */
@@ -86,6 +113,7 @@ h2{
     background-color: #525252;
     padding: 0px;
     color: #ffffff;
+    height: 210px;
     flex-grow: 1;  /* Allows the container to take up the remaining space */
     box-sizing: border-box;  /* Ensures padding is included within the width */
     display: flex;
@@ -95,7 +123,6 @@ h2{
 }
 .thumbnail-container p {
     padding: 15px;
-    
     color: #ffffff;
 }
 
@@ -106,7 +133,7 @@ header {
     left: 0;
     width: 100%; /* Ensures it spans the full width */
     z-index: 1000; /* Keeps it above other elements */
-    background-color: #333; /* Keeps the background color */
+
     box-shadow: 0 4px 6px #0100001a;
 }
 
@@ -270,10 +297,12 @@ button:hover {
 
 /* Hero Banner Styles */
 .hero {
+    margin: 0px;
     position: relative; /* Needed to position the overlay */
     width: 100%;
     height: 700px; /* Adjust as needed */
     overflow: hidden;
+    
 }
 
 .hero img {
@@ -322,31 +351,62 @@ button:hover {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 equal columns */
+    display: flex;
+    flex-wrap: wrap; /* Wrap to next row if needed */
+    justify-content: center; /* Center align */
     gap: 20px; /* Space between items */
-    max-width: 400px; /* Adjust as needed */
-    margin: 0 ; /* Centers the grid itself */
-    
-    
 }
 
-.skills-container p {
-    gap: 10px; /* Space between icon and text */
-    font-size: 18px;
-    width: 300px;
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align */
+    text-align: center;
+    color: #ffffff;
+    gap: 12px; /* Space between icon and text */
+    font-size: 24px;
+    font-weight: bold;
+    width: 250px;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
-    background-color: #3d3d3d;
+    background-color: #414141;
     padding: 1rem 1rem 1rem 1rem;
-    
+    text-align: center; /* Center align */
 }
+ /*
+.devicon-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to next row if needed *//*
+    justify-content: left; /* Center align *//*
+    gap: 20px; /* Space between items *//*
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    border-radius: 0%;
+    background-color: #ffffff;
+}
+*/
 
 .devicon {
-    font-size: 80px; /* Adjust size */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align */
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
     margin-right: 0px; /* Add spacing between icon and text */
     vertical-align: middle; /* Align icons with text */
+    width: 130px;
+    height: 130px;
+
+    border-radius: 30%;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+   
+    background-color: #ffffff;
     
 }
+
+
 
 #loading-screen {
     position: fixed;

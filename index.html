@@ -29,26 +29,57 @@
     
     <main>
 
-        <section id="about">
+        <section id="about" class="body-text">
             <h2 data-translate="aboutTitle"></h2>
             <p data-translate="aboutContent"></p>
             
             <a href="projects.html" class="btn" data-translate="aboutBtn">Learn More About my Projects</a>
         </section>
 
-        <section id="skills">
+
+
+        <section id="skills" class="body-text">
             <h2 data-translate="skillsTitle"></h2>
             <p data-translate="skillsContent"></p>
             <div class="skills-container">
-                <p><i class="devicon-html5-plain  devicon"></i>&nbsp; HTML</p> 
-                <p><i class="devicon-css3-plain  devicon"></i> CSS</p>
-                <p><i class="devicon-javascript-plain  devicon"></i> JavaScript</p>
-                <p><i class="devicon-wordpress-plain devicon"></i> Wordpress</p>
-                <p><i class="devicon-cplusplus-plain  devicon"></i> C++</p>
-                <p><i class="devicon-python-plain  devicon"></i> Python</p>
-                <p><i class="devicon-r-plain  devicon"></i> R</p>
-                <p><i class="devicon-java-plain  devicon"></i> Java</p>
-                <p><i class="devicon-haskell-plain  devicon"></i> Haskell</p>
+                <div class="skill">
+                    <div class="devicon-container">
+                    <img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></img>
+                    </div>
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" />
+                    <span>Wordpress</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                    <span>C++</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" />
+                    <span>R</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                    <span>Java</span>
+                </div>
+                <div class="skill">
+                    <img  class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/haskell/haskell-original.svg" />                   
+                    <span>Haskell</span>
+                </div>
             </div>
 
 
@@ -56,11 +87,11 @@
             </div>    
         </section>
 
-        <section id="projects">
+        <section id="projects" class="body-text">
             <h2 data-translate="projectsTitle"></h2>
             <div class="thumbnail-wrapper">
             <a class="thumbnail" href="https://web.archive.org/web/20230926053004/https://chemistry.mcmaster.ca/">
-                <i class="fas fa-university fa-3x"></i>
+                <img src="Chem-web.PNG" alt="Graph of the motion of the double pendulum model"></img>
                 <h3 class="thumbnail-header" data-translate="projectsChemTitle"></h3>
                 <div class="thumbnail-container">
                     <p data-translate="projectsChemContent"></p>
@@ -69,8 +100,8 @@
             </a>
            
             <a class="thumbnail" href="https://github.com/LexxieR/double-pendulum-model">
-                <img src="BaseCase2.JPG" alt="Graph of the motion of the double pendulum model"></img>
-                <div class="thumbnail-header" data-translate="projectsPenTitle">Double Pendulum Model in C++</div>
+                <img src="BaseCase2-copy.PNG" alt="Graph of the motion of the double pendulum model"></img>
+                <h3 class="thumbnail-header" data-translate="projectsPenTitle">Double Pendulum Model in C++</h3>
                 <div class="thumbnail-container">
                     <p data-translate="projectsPenContent"></p>
                     
@@ -80,7 +111,7 @@
         
         </section>
 
-        <section id="contact">
+        <section id="contact"  class="body-text">
             <h2 data-translate="contactTitle"></h2>
             <form id="contactForm" action="https://formsubmit.co/lexxie.roy@gmail.com" method="POST"  onsubmit="showLoadingScreen()">         
                 <label data-translate="nameLabel">Name:</label>
