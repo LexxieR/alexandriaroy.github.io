@@ -60,99 +60,77 @@ h2{
 }
 
 
-.thumbnail-wrapper {
-    display: flex;
-    flex-wrap: wrap;  /* Allows wrapping on small screens */
-    gap: 20px;        /* Adds space between thumbnails */
-    justify-content: center;
-}
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+  }
 
 .thumbnail {
-    width: 300px;
-    text-align: center;
-    text-decoration: none;
-    background: #333333;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #525252;
+    border-radius: 12px;
+    /* Allow text to take natural height; thumbnails will match tallest */
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Remove fixed height so cards grow based on tallest content */
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
                 0 6px 20px rgba(0, 0, 0, 0.19);
     transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column; /* Stack the image and text vertically */
-    box-sizing: border-box;  /* Ensures padding and borders are included in width */
-    height: 100%; /* Ensures the thumbnail container stretches to its contents */
-     /* box-sizing: border-box; Ensures padding and borders are included in width */
-}
+    
 
+}
 /* Hover effect */
 .thumbnail:hover {
     transform: scale(1.03);
 }
+    
 
 .thumbnail img {
-    width: 100%;  /* Makes the image take up the full width of the thumbnail */
-    height: auto;  /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures image covers the area without distortion */
-    border-radius: 0px; /* Optional: rounds corners for a smoother look */
-    display: block; /* Ensures the image is a block-level element */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display:block;
+
 }
 
-.thumbnail i {
-    color: #FDBF57;
-    font-size: 230px;  /* Adjust this value to make it bigger */
-    margin: 35px 0px 35px 0px;
+.thumbnail-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  
+
+}
+
+.thumbnail h3 {
+    margin: 0 0 0px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 0px 12px 0px;
+    background-color: #3B3B3B;
+    
+   
 }
 
 .thumbnail p {
-    font-size: 16px;
-    color: #333;
-}
-
-/* Header text */
-.thumbnail-header {
-    background-color: #3b3b3b;
-    color: white;
-    height: 80px;
- 
-    
-    text-align: center;
-    padding:10px;
-
-    font-size: 18px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    
-
-}
-
-
-
-
-/* Text container */
-.thumbnail-container {
-    background-color: #525252;
-    padding: 0px;
+    margin: 0;
+    flex-grow: 1;
+    font-size:16px;
     color: #ffffff;
-    height: 210px;
-    flex-grow: 1;  /* Allows the container to take up the remaining space */
-    box-sizing: border-box;  /* Ensures padding is included within the width */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  /* Ensures space is evenly distributed */
-    
-}
-.thumbnail-container p {
-    padding: 15px;
-    color: #ffffff;
+    overflow: hidden;
+    text-decoration: none;
+    padding:5px 15px 5px 15px;
 }
 
+.thumbnail a {
+    text-decoration: none;
+}
 
 header {
     position: fixed; /* Fixes the menu at the top */
@@ -244,7 +222,7 @@ button:hover {
     display: flex;
     justify-content: space-between; /* Aligns menu on the left, language switch on the right */
     align-items: center;
-    background-color: #333;  
+    background-color: #272727;  
     position: relative; /* Ensures positioning for dropdowns */
     z-index: 1000; /* Keeps nav above other elements */
     
@@ -355,7 +333,7 @@ button:hover {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
