@@ -14,7 +14,7 @@ const translations = {
         projectsTitle: "Projects",
         projectsContent: "Here are selection of projects I’ve created or supported.",
         projectsChemTitle: "Science Homepage Redesign",
-        projectsChemContent: "During the summer of 2023, I had a key role in the new design of the departmental websites, maintaining brand consistency along each website and adding new features for usability improvement.",
+        projectsChemContent: "During the summer of 2023, I played a key role in the redesign of the departmental websites, maintaining brand consistency across each website and adding new features to improve usability.",
         projectsPenTitle: "Double Pendulum Model in C++",
         projectsPenContent: "As a final project for the scientific computing course at McMaster University, I developed a model of a double pendulum system in C++ using the Runge-Kutta method to solve the ordinary differential equations involved.",
         projectsWordPressTitle: "WordPress Custom Theme",
